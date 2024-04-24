@@ -4,11 +4,11 @@ Here are common scenarios
 1. I don't have a GitHub account and only need this for Dartmouth work
 2. I have a GitHub account for personal use, but I don't want to use that for my Dartmouth work.
 
-If you fall into (a), follow the steps below and sign up with your college email addresses, both:
+If you fall into (1), follow the steps below and sign up with your college email addresses, both:
 - name@dartmouth.edu
 - netid@dartmouth.edu
 
-If you fall into (b), you can also follow the steps below, but you can consider alternatively using your personal account. GitHub actually recommends this approach citing that person <-> account is a one-to-one mapping ([reference](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts#:~:text=people%20will%20use-,one%20personal%20account,-for%20all%20their)). For what it's worth, GitHub does a great job at letting you use one account and put on different personas depending on what you're doing.
+If you fall into (2), you can also follow the steps below, but you can consider alternatively using your personal account. GitHub actually recommends this approach citing that person <-> account is a one-to-one mapping ([reference](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts#:~:text=people%20will%20use-,one%20personal%20account,-for%20all%20their)). For what it's worth, GitHub does a great job at letting you use one account and put on different personas depending on what you're doing.
 
 ## Steps
 
