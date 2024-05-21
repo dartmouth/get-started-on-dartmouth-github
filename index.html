@@ -2,6 +2,8 @@
 <head>
   <title>Get Started on Dartmouth GitHub</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
 </head>
 <body class="markdown-body">
 
@@ -24,6 +26,61 @@
 <li><a href="./add-dartmouth-email">I already have a GitHub account</a></li>
 </ul>
 </p>
+
+<h1>Level up your Git-fu</h1>
+
+<p>If you're all set on getting started consider making these changes to improve your setup.</p>
+
+<ul id="level-up">
+  <li id="disable-watch"><a href="#disable-watch">Disable watching repositories automatically</a></li>
+  <div id="disable-watch-steps">
+    By default you are signed up to watch all repositories you have push access to. If you do not want to get emails for those repos then here's how you can disable that.
+    <ul>
+      <li>Log into GitHub</li>
+      <li>Browse to <a href="https://github.com/settings/notifications" target="_blank">settings/notifications</a> (in the top right click your profile icon and then "Settings", then on the left click "Notifications")</li>
+      <li>Towards the top, find the "Automatically watch repositories" section and toggle it to "Off"</li>
+    </ul>
+  </div>
+  <li id="default-branch"><a href="#default-branch">Set your default branch to main (instead of master)</a></li>
+  <div id="default-branch-steps">
+    The default branch for git has always been "master", but you should change your configuration so that any new repositories you create will be initialized with a default branch of "main". To do that, run:
+    <pre>git config --global init.defaultBranch main</pre>
+    You can check all your git configurations by running
+    <pre>git config --global --list --show-origin</pre>
+  </div>
+
+  <li id="https-clone"><a href="#https-clone">HTTPS cloning</a></li>
+  <div id="https-clone-steps">
+    In Dartmouth GitLab, remote access was via SSH. This is still an option with GitHub, but it might be worth considering switching to cloning over HTTPS. The benefits include:
+    <ul>
+      <li>SSH keys get used in other places and you need to guard them more carefully</li>
+      <li>HTTPS is GitHub's default so there is less clicking when using the web UI</li>
+    </ul>
+    If you're sold, GitHub has some great documenation at <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">Managing your personal access tokens</a>, but that's a long read. Let me save you some time. Browse to the <a href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md">install instructions for Git Credential Manager</a>.
+    <p>
+      Once the Git Credential Manager is installed, the next time you need to authentication to GitHub via the command line it will intercept the request and prompt you to do an OAuth login in your web browser. You manually initiate the setup by running:
+      <pre>git credential-manager github login</pre>
+      More information is at <a href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/usage.md">usage.md</a>.
+    </p>
+    <p>
+      To review what was setup:
+      <ul>
+        <li>Log into GitHub</li>
+        <li>Browse to <a href="https://github.com/settings/applications" target="_blank">settings/applications</a> (in the top right click your profile icon and then "Settings", then on the left click "Applications", then finally "Authorized OAuth Apps")</li>
+        <li>In the list should be "Git Credential Manager"</li>
+      </ul>
+    </p>
+  </div>
+
+  <li id="more-help"><a href="#more-help">Contact the GitHub administrators</a></li>
+  <div id="more-help-steps">
+    If you need more help with GitHub, email <a href="mailto:help@dartmouth.edu">help@dartmouth.edu</a> to open a ticket with our Service Desk. Please include enough information in the request so that they can route it to the appropriate ITC team.
+    <p>
+      Note that there is a lot of great information about Git on the Internet. One possible resource is to check out <a href="https://docs.github.com/en/get-started">GitHub's getting started guide</a>.
+    </p>
+  </div>
+</ul>
+
 </div>
 </body>
 </html>

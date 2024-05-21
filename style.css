@@ -11,3 +11,29 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+#level-up > li {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#level-up > li a {
+  color: black;
+}
+
+#level-up div {
+  display: none;
+  padding: 20px 0;
+}
+
+pre {
+  background-color: #e2e2e2;
+  border: 1px solid black;
+  display: block;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  /* overflow-x: scroll; */
+  max-width: 100%;
+  min-width: 100px;
+  padding: 10px;
+}
