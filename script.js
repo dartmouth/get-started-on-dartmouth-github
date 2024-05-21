@@ -5,4 +5,8 @@ $(document).ready(function(){
   $("#level-up li").click(function(){
     $("#" + $(this).attr('id') + "-steps").slideToggle();
   });
+
+  $("#level-up pre span").click(function(){
+    navigator.clipboard.writeText($(this).parent().text());
+  });
 });

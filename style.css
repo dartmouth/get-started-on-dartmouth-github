@@ -26,7 +26,7 @@
   padding: 20px 0;
 }
 
-pre {
+#level-up pre {
   background-color: #e2e2e2;
   border: 1px solid black;
   display: block;
@@ -36,4 +36,10 @@ pre {
   max-width: 100%;
   min-width: 100px;
   padding: 10px;
+}
+
+#level-up span {
+  cursor: pointer;
+  display: block;
+  float: right;
 }
