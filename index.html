@@ -34,6 +34,7 @@
 <p>If you're all set on getting started consider making these changes to improve your setup.</p>
 
 <ul id="level-up">
+
   <li id="disable-watch"><a href="#disable-watch">Disable watching repositories automatically</a></li>
   <div id="disable-watch-steps">
     By default you are signed up to watch all repositories you have push access to. If you do not want to get emails for those repos then here's how you can disable that.
@@ -42,7 +43,14 @@
       <li>Browse to <a href="https://github.com/settings/notifications" target="_blank">settings/notifications</a> (in the top right click your profile icon and then "Settings", then on the left click "Notifications")</li>
       <li>Towards the top, find the "Automatically watch repositories" section and toggle it to "Off"</li>
     </ul>
+    If you're finding this after already getting lots of notifications and you wish to turn them off, follow these steps:
+    <ul>
+      <li>Log into GitHub</li>
+      <li>Browse to <a href="https://github.com/watching" target="_blank">watching</a> (in the top right click your profile icon and then "Settings", then on the left click "Notifications"), next click "View watched repositories" under the Subscription section.</li>
+      <li>At the top in red there is a "Unwatch all" button that has a filter or you can individually change "Watch" to "Participating and @mentions" (yes, that value is the same as unwatching a repo, "ignoring" a repo goes further and turns everything off).</li>
+    </ul>
   </div>
+
   <li id="default-branch"><a href="#default-branch">Set your default branch to main (instead of master)</a></li>
   <div id="default-branch-steps">
     The default branch for git has always been "master", but you should change your configuration so that any new repositories you create will be initialized with a default branch of "main". To do that, run:
