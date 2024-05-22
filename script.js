@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#" + $(this).attr('id') + "-steps").slideToggle();
   });
 
-  $("#level-up pre span").click(function(){
+  $(".copy-button").click(function(){
     navigator.clipboard.writeText($(this).parent().text());
   });
 });

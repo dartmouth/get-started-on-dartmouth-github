@@ -32,14 +32,66 @@
   display: block;
   white-space: pre;
   -webkit-overflow-scrolling: touch;
-  /* overflow-x: scroll; */
   max-width: 100%;
   min-width: 100px;
   padding: 10px;
 }
 
-#level-up span {
-  cursor: pointer;
+.copy-button {
   display: block;
   float: right;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: url('https://abs.twimg.com/emoji/v1/72x72/1f4cb.png'); /* Twitter clipboard emoji */
+  background-size: 60% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0,0,0,.29);
+  border-bottom-color: rgba(0,0,0,.36);
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.12);
+
+  &:before {
+    content: '';
+    display: none;
+    z-index: 9998;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(0,0,0,.72);
+  }
+
+  &:after {
+    content: 'Copy to Clipboard';
+    display: none;
+    position: relative;
+    bottom: 40px;
+    left: -37px;
+    z-index: 9999;
+    width: 114px;
+    height: 36px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(0,0,0,.72);
+    border-radius: 3px;
+  }
+
+  &:hover {
+    background-color: #eee;
+    &:before, &:after {
+      display: block;
+    }
+  }
+
+  &:active, &:focus {
+    outline: none;
+    &:after {
+      content: 'Copied!';
+    }
+  }
 }

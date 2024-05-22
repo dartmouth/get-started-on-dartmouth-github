@@ -54,9 +54,9 @@
   <li id="default-branch"><a href="#default-branch">Set your default branch to main (instead of master)</a></li>
   <div id="default-branch-steps">
     The default branch for git has always been "master", but you should change your configuration so that any new repositories you create will be initialized with a default branch of "main". To do that, run:
-    <pre>git config --global init.defaultBranch main<span><i class="fa fa-copy" style="font-size:36px;"></i></span></pre>
+    <pre>git config --global init.defaultBranch main<button class="copy-button"></button></pre>
     You can check all your git configurations by running
-    <pre>git config --global --list --show-origin<span><i class="fa fa-copy" style="font-size:36px;"></i></span></pre>
+    <pre>git config --global --list --show-origin<button class="copy-button"></button></pre>
   </div>
 
   <li id="https-clone"><a href="#https-clone">HTTPS cloning</a></li>
@@ -69,7 +69,7 @@
     If you're sold, GitHub has some great documenation at <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">Managing your personal access tokens</a>, but that's a long read. Let me save you some time. Browse to the <a href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md">install instructions for Git Credential Manager</a>.
     <p>
       Once the Git Credential Manager is installed, the next time you need to authentication to GitHub via the command line it will intercept the request and prompt you to do an OAuth login in your web browser. This is a one-time event. Alternatively, you can manually initiate the setup by running:
-      <pre>git credential-manager github login<span><i class="fa fa-copy" style="font-size:36px;"></i></span></pre>
+      <pre>git credential-manager github login<button class="copy-button"></button></pre>
       More information is at <a href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/usage.md">usage.md</a>.
     </p>
     <p>
