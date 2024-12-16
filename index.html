@@ -82,6 +82,37 @@
     </p>
   </div>
 
+  <li id="mulitple-identities"><a href="#mulitple-identities">Multiple identities</a></li>
+  <div id="mulitple-identities-steps">
+    If you wear mulitple hats and prefer to keep your identities distinct from project to project, read on. Your Git configuration is usually stored in a file at <code>$HOME/.gitconfig</code>. In there you are able to specify how to authenticate to different repositories. For example, the following configuration will load different additional configuration files depending on what path you're in.
+    <pre>
+[includeIf "gitdir:/Users/bobjones/repos/work/"]
+  path = "~/.gitconfig_work"
+[includeIf "gitdir:/Users/bobjones/repos/personal/"]
+  path = "~/.gitconfig_personal"
+</pre>
+
+Then your <code>~/.gitconfig_work</code> could look like
+<pre>
+[core]
+  sshCommand = ssh -i ~/.ssh/git-work
+</pre>
+and <code>~/.gitconfig_personal</code> could look like
+<pre>
+[credential "https://github.com"]
+  username = bobjones
+  helper = /usr/local/share/gcm-core/git-credential-manager
+</pre>
+With this setup in place, your work repos will use a SSH key and your personal repos would use a credential manager for token access.
+    <p>
+      For more information, see:
+      <ul>
+        <li><a href="https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b">https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b</a></li>
+      <li><a href="https://git-scm.com/docs/gitcredentials">https://git-scm.com/docs/gitcredentials</a></li>
+    </ul>
+    </p>
+  </div>
+
   <li id="more-help"><a href="#more-help">Contact the GitHub administrators</a></li>
   <div id="more-help-steps">
     If you need more help with GitHub, email <a href="mailto:help@dartmouth.edu">help@dartmouth.edu</a> to open a ticket with our Service Desk. Please include enough information in the request so that they can route it to the appropriate ITC team.
